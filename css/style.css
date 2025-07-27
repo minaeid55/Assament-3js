@@ -1,0 +1,92 @@
+::selection {
+  background-color: #fec260;
+  color: #352e28;
+}
+
+section {
+  background-color: #f7ecde;
+}
+
+tr th,
+tr td {
+  width: 25%;
+  height: 60px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  transition: all 0.3s;
+  background-color: #fec260;
+  z-index: -10;
+}
+
+h1:hover::before {
+  height: 60%;
+}
+
+.form {
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+}
+
+.form .heading {
+  font-family: "Righteous", sans-serif;
+  background: linear-gradient(to right, #3da55c, #b4ac4a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form .submit {
+  background-color: #d34f2a;
+  color: lightcyan;
+}
+
+.form .submit:hover {
+  background-color: #bb4120;
+}
+
+.form .input-name:focus,
+.form .input-site:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.layer {
+  width: fit-content;
+}
+
+.all-circle {
+  font-family: "Righteous", sans-serif;
+}
+
+.all-circle .circle {
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.all-circle i {
+  cursor: pointer;
+}
+
+.layer p i {
+  color: rgb(158, 57, 10);
+
+}
